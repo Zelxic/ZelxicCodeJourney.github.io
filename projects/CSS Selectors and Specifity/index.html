@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors and specificity</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>CSS Selectors and specificity Reference</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>CSS Selectors</h2>
+        <table>
+          <thead>
+            <th>Selectors</Select></th>
+            <th>Example</th>
+            <th>Example Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="Selectors ">*</td>
+              <td>*</td>
+              <td class="Description">Select all elements</td>
+            </tr>
+            <tr>
+              <td class="Selectors ">.class</td>
+              <td>.hello</td>
+              <td class="Description">Select all elements with class="hello"</td>
+            </tr>
+            <tr>
+                <td class="Selectors ">.class1.class2</td>
+                <td>.name1.name2</td>
+                <td class="Description">Select all elements with both name1 and name2 within the class attribute 
+                </td>
+            </tr>
+            <tr>
+              <td class="Selectors ">.class1 .class2</td>
+              <td>.name1 .name2</td>
+              <td class="Description">Select all element with name2 descendent of the elements with name1 </td>
+            </tr>
+            <tr> 
+                <td class="Selectors ">#id</td>
+                <td>#myName</td>
+                <td class="Description">Select the element with id="myName"</td>
+            </tr>
+            <tr>
+                <td class="Selectors ">element</td>
+                <td>p</td>
+                <td class="Description">Selects all &lt;p&gt; elements</td>
+            </tr>
+            <tr>
+                <td class="Selectors ">element.class</td>
+                <td>p.hello</td>
+                <td class="Description">Selects all &lt;p&gt; elements with class="hello"</td>
+            </tr>
+            <tr>
+                <td class="Selectors ">element, element</td>
+                <td>div, p</td>
+                <td class="Description">Selects all &lt;div&gt; and &lt;p&gt; elements</td>
+            </tr>
+            <tr>
+                <td class="Selectors ">element element</td>
+                <td>div p</td>
+                <td class="Description">Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+          <h2>CSS Specificity Hierarchy</h2>
+          <p>Based on highest to lowest specificity</p>
+        <table>
+            <thead>
+                <th>Category</th>
+                <th>Example</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="Category">Inline Styles</td>
+                    <td>&lt;h1 style="color: pink;"&gt;&lt;/h1&gt;</td>
+                </tr>
+                <tr>
+                    <td class="Category">IDs</td>
+                    <td>#navbar</td>
+                </tr>
+                <tr>
+                    <td class="Category">Classes, pseudo-classes, attribute selectors</td>
+                    <td>.test, :hover, [href]</td>
+                </tr>
+                <tr>
+                    <td class="Category">Elements and pseudo-elements</td>
+                    <td>h1, ::before</td>
+                </tr>
+            </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
